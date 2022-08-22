@@ -140,7 +140,7 @@ public class TaskController extends SceneController implements Initializable {
 			stringBuilder.append(" pm");
 		}
 		
-		return stringBuilder.toString();;
+		return stringBuilder.toString();
 	}
 
 	public boolean dateIsValid(String dueDate ){
@@ -148,11 +148,11 @@ public class TaskController extends SceneController implements Initializable {
 		String[] dayCheck = dueDate.split("/");
 
 		if (dayCheck.length == 3) {
-			int year = Integer.parseInt(dayCheck[2]);
+			
 			int month =Integer.parseInt(dayCheck[1]);
 			int day = Integer.parseInt(dayCheck[0]);
 
-			if ( month > 0 && month < 13 && day > 0 && day < 32 && year > 2021){
+			if ( month > 0 && month < 13 && day > 0 && day < 32){
 				return true;
 			}
 		}
